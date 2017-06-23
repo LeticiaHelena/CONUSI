@@ -1,0 +1,14 @@
+Para executar da melhor forma o projeto, você deverá seguir os seguintes passos:
+
+1° - Executar o Banco de Dados no arquivo chamado "BD_PRODUTOS_CONUSI";
+
+2° - Abrir o Visual Studio no projeto "Prj_TCC_0.1", na pasta "Área do Administrador";
+
+3° - Abrir a pasta "Área Cliente", e abrir o documento HTML "Index";
+
+4° - Para poder acessar a Area do Administrador pela Área do Cliente, você deverá:
+
+	1° - Ir na area de login na área do cliente quando você já estiver navegando pelo documento web (HTML);
+	2° - Em seguida inserir os dados nos locais indicados, login: admin e senha: admin;
+
+5° - você será redirecionado para a área do administrador;

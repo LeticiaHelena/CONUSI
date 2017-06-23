@@ -1,0 +1,6 @@
+E:\PROJETO\Área Administrador\Teste\bin\Debug\Teste.dll
+E:\PROJETO\Área Administrador\Teste\bin\Debug\Teste.pdb
+E:\PROJETO\Área Administrador\Teste\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\PROJETO\Área Administrador\Teste\obj\Debug\Teste.csprojResolveAssemblyReference.cache
+E:\PROJETO\Área Administrador\Teste\obj\Debug\Teste.dll
+E:\PROJETO\Área Administrador\Teste\obj\Debug\Teste.pdb

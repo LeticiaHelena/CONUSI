@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Prj_TCC_0._1.Models.Categoria>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Adicionar Categoria", "Cadastro")
+</p>
+
+<span class ="label label-success">@TempData["SuccessMsg"]</span>
+<span class ="label label-danger">@TempData["ErrorMsg"]</span>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descricao)
+        </td>
+    <td>
+            @Html.ActionLink("Editar", "Editar"  , new { id=item.Id }) |
+            @Html.ActionLink("Excluir", "Excluir", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Prj_TCC_0._1.Models.Tipo>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Adicionar Tipo", "Cadastro")
+</p>
+
+<span class ="label label-success">@TempData["SuccessMsg"]</span>
+<span class ="label label-danger">@TempData["ErrorMsg"]</span>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Categoria.Descricao)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Categoria.Descricao)
+        </td>
+    <td>
+            @Html.ActionLink("Editar", "Editar"  , new { idtipo=item.IdTipo }) |
+            @Html.ActionLink("Excluir", "Excluir", new { idtipo=item.IdTipo})
+        </td>
+    </tr>
+}
+
+</table>
